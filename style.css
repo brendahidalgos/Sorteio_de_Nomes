@@ -8,10 +8,12 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+
 h1 {
   margin-bottom: 20px;
   color: #222;
 }
+
 textarea {
   width: 300px;
   height: 150px;
@@ -22,7 +24,15 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  white-space: pre-line;
 }
+
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 button {
   background-color: #007acc;
   color: white;
@@ -32,20 +42,36 @@ button {
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s;
-  margin-bottom: 20px;
 }
-button:hover {
+
+button:hover:not(:disabled) {
   background-color: #005fa3;
 }
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+button#btnLimpar {
+  background-color: #777;
+}
+
+button#btnLimpar:hover {
+  background-color: #444;
+}
+
 #resultado {
   font-size: 24px;
   font-weight: bold;
   color: #007acc;
-  min-height: 40px;
+  min-height: 60px;
   text-align: center;
   margin-top: 10px;
   user-select: none;
+  white-space: pre-line;
 }
+
 .instrucoes {
   max-width: 300px;
   color: #555;
