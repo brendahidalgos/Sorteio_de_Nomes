@@ -1,13 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  min-height: 100dvh; /* usa altura visível real */
-  margin: 0;
-  overflow: hidden; /* força a remoção da rolagem */
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    min-height: 100dvh; /* usa altura visível real */
+    margin: 0;
+    overflow: hidden; /* força a remoção da rolagem */
 }
 .imagem-fundo {
     position: fixed;
@@ -19,73 +19,80 @@ body {
     pointer-events: none;
 }
 .container {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin-top: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 100px;
+    width: 90%;
+    max-width: 400px;
 }
 h1 {
-  margin-bottom: 20px;
-  color: #222;
+    margin-bottom: 20px;
+    color: #222;
 }
 textarea {
-  width: 300px;
-  height: 150px;
-  padding: 10px;
-  font-size: 16px;
-  resize: vertical;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  white-space: pre-line;
-  resize: none; /* impede redimensionamento manual */
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    resize: vertical;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    white-space: pre-line;
+    resize: none; /* impede redimensionamento manual */
 }
 .botoes {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-  justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
 }
 button {
-  background-color: #007acc;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+    background-color: #e20d0d;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 button:hover:not(:disabled) {
-  background-color: #005fa3;
+    background-color: #5c0808;
 }
 button:disabled {
-  background-color: #999;
-  cursor: not-allowed;
+    background-color: #999;
+    cursor: not-allowed;
 }
 button#btnLimpar {
-  background-color: #777;
+    background-color: #777;
 }
 button#btnLimpar:hover {
-  background-color: #444;
+     background-color: #444;
 }
 #resultado {
-  font-size: 24px;
-  font-weight: bold;
-  color: #007acc;
-  min-height: 60px;
-  text-align: center;
-  margin-top: 10px;
-  user-select: none;
-  white-space: pre-line;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    min-height: 60px;
+    text-align: center;
+    margin-top: 10px;
+    user-select: none;
+    white-space: pre-line;
 }
 .instrucoes {
-  max-width: 300px;
-  color: #555;
-  font-size: 14px;
-  margin-bottom: 10px;
-  text-align: center;
+    max-width: 300px;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
